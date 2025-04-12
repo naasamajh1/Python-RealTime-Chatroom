@@ -198,7 +198,7 @@ def handle_message(data: dict):
 
 if __name__ == '__main__':
     # In production, use gunicorn or uwsgi instead
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 10000))
     socketio.run(
         app,
         host='127.0.0.1',
